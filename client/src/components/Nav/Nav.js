@@ -28,7 +28,7 @@ const Nav1 = () =>
       {/* <a href="#brand"><img src="https://www.w3schools.com/images/w3schools_green.jpg"><img </a> */}
     </Navbar.Brand>
     <Navbar.Toggle />
-    <a href="localhost:3000"><img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="128px" height="128px"/></a>
+    <a href="localhost:3000"><img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="120px" height="120px" class="GGLogo"/></a>
 
   </Navbar.Header>
 
@@ -70,6 +70,9 @@ const Nav1 = () =>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+
 </div>;
+
+
 
 export default Nav1;
