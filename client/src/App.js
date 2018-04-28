@@ -1,21 +1,46 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Nav1 from "./components/Nav";
 import './App.css';
+import './index.css';
+import Modal from './components/Modal';
 
 class App extends Component {
+  state = {
+    show: false
+  }
+  showModal = () => {
+    this.setState({
+      ... this.state,
+      show: !this.state.show
+    });
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+  <Router>
+    <div>
+      <Nav1 />
+      
+      {/* <body onLoad={this.showModal}> */}
+      <input type="button" 
+      onClick={this.showModal} 
+      value="Show Modal" />
+
+      <Modal 
+      // onPageLoad={this.showModal}
+      onClose={this.showModal}
+      show={this.state.show}>
+        This message is from Modal!
+      </Modal> 
+      <Switch>
+        {/* <Route exact path="/" component={Books} /> */}
+        {/* <Route exact path="/modal" component={ageModal} /> */}
+        {/* <Route exact path="/books/:id" component={Detail} /> */}
+        {/* <Route component={NoMatch} /> */}
+      </Switch>
+    </div>
+  </Router>
     );
   }
 }
-
 export default App;
