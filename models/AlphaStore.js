@@ -28,7 +28,10 @@ var AlphaStoreProducts = new Schema({
         type: String,
         required: true
     },
-
+    weight: {
+        type: String,
+        required: true
+    },
     quantity: {
         type: Number,
         required: true
@@ -38,7 +41,7 @@ var AlphaStoreProducts = new Schema({
 
 
 // This creates our model from the above schema, using mongoose's model method
-var AlphaStoreProducts = mongoose.model("AlphaStoreProducts", AlphaStoreProducts);
+var AlphaStoreProducts = mongoose.model("AlphaStoreProducts", AlphaStoreSchema);
 
 // Export the Article model
 module.exports = AlphaStoreProducts;
