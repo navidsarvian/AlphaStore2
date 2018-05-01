@@ -3,11 +3,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav1 from "./components/Nav";
 import './App.css';
 import './index.css';
-import Modal from './components/Modal';
+import Modal, { ModalContent } from './components/Modal';
 
+function MyPage(props) {
+  return <div>
+    hiiiiiiii
+  </div>;
+}
 class App extends Component {
   state = {
-    show: false
+    show: true
   }
   showModal = () => {
     this.setState({
@@ -15,25 +20,40 @@ class App extends Component {
       show: !this.state.show
     });
   }
+  renderNav() {
+    // if you don't want nav, ensure this conditional is true
+    if ('mycondition' === true) {   
+      return null;
+    }
+
+    // else return Nav
+    return <Nav1 />;
+  }
+  
   render() {
     return (
   <Router>
     <div>
-      <Nav1 />
+
+      {this.renderNav()}
       
       {/* <body onLoad={this.showModal}> */}
-      <input type="button" 
+      {/* <input type="button" 
       onClick={this.showModal} 
       value="Show Modal" />
-
+ */}
       <Modal 
-      // onPageLoad={this.showModal}
       onClose={this.showModal}
       show={this.state.show}>
-        This message is from Modal!
+      {/* <ModalContent /> */}
+      {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
+        
+      
+        Please Verify Your Age */}
+      {/* </ModalContent> */}
       </Modal> 
       <Switch>
-        {/* <Route exact path="/" component={Books} /> */}
+        <Route exact path="/hi" component={MyPage} />
         {/* <Route exact path="/modal" component={ageModal} /> */}
         {/* <Route exact path="/books/:id" component={Detail} /> */}
         {/* <Route component={NoMatch} /> */}
