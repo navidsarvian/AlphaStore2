@@ -33,9 +33,10 @@ class App extends Component {
         This message is from Modal!
       </Modal> 
       <Switch>
-        {/* <Route exact path="/" component={Books} /> */}
-        {/* <Route exact path="/modal" component={ageModal} /> */}
-        {/* <Route exact path="/books/:id" component={Detail} /> */}
+        {/* <Route exact path="/" component={home} /> */}
+        {/* <Route exact path="/modal" component={modal} /> */}
+        {/* <Route exact path="/login/:id" component={login} /> */}
+        {/* <Route exact path="/shop" component={shop} />* }
         {/* <Route component={NoMatch} /> */}
       </Switch>
     </div>
