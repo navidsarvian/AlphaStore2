@@ -4,7 +4,8 @@ import Nav1 from "./components/Nav";
 import './App.css';
 import './index.css';
 import Modal from './components/Modal';
-
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 class App extends Component {
   state = {
     show: false
@@ -33,12 +34,12 @@ class App extends Component {
         This message is from Modal!
       </Modal> 
       <Switch>
-        <Route exact path="/" component={home}/>
-        <Route exact path="/home" component = {home}/>
-       <Route exact path="/modal" component={modal} />
-        <Route exact path="/login" component={login} />
-        <Route exact path="/shop" component={shop} />
-        <Route component={NoMatch} />
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/home" component = {Home}/>
+       <Route exact path="/modal" component={Modal} />
+        <Route exact path="/login" component={Login} />
+       {/* // <Route exact path="/shop" component={shop} />
+        <Route component={NoMatch} /> */}
       </Switch>
     </div>
   </Router>
