@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './Modal.css';
 import Modal from 'react-modal';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { Link  } from 'react-router-dom';
 
 
@@ -43,7 +43,9 @@ export default class App extends React.Component {
   }
 
   closeModal() {
-    this.setState({modalIsOpen: false});
+    this.setState({
+      modalIsOpen: false
+    });   
   }
 
   render() {
@@ -57,12 +59,16 @@ export default class App extends React.Component {
           contentLabel="Example Modal"
         >
 
-            <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
+            <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" className="GGLogo" alt=""/>
 
           <h2 ref={subtitle => this.subtitle = subtitle}>Please Verify Your Age</h2>
           <div className="center">
-          <button onClick={this.closeModal} class="ModalButtons">I am 19+</button>
-          <Link to="/hi"><button onClick={this.closeModal} class="ModalButtons">I am not 19</button></Link>
+          <button onClick={this.closeModal} className="ModalButtons">I am 19+</button>
+          <Link to="/hi"><button 
+            onClick={() => { 
+              this.closeModal(); this.props.hansolo()
+              }} 
+            className="ModalButtons">I am not 19</button></Link>
             </div>
         </Modal>
       </div>
