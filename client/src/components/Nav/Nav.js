@@ -12,7 +12,7 @@ const Nav1 = () =>
 //           <span className="icon-bar" /> <span className="icon-bar" />
 //           <span className="icon-bar" />
 //         </button>
-        
+
 //         <a href="/" className="navbar-brand">
 //           React Reading List
 //         </a>
@@ -44,7 +44,7 @@ const Nav1 = () =>
         </Link>
         </li>
       </NavItem>
-      
+
       {/* <NavItem eventKey={2} href="#">
         Link
       </NavItem> */}
