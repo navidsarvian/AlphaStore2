@@ -7,29 +7,37 @@ import Modal, { ModalContent } from './components/Modal';
 import Jumbo from "./components/Jumbotron";
 import Products from "./components/ProductCards";
 
+
 function MyPage(props) {
-  return <div>
-    hiiiiiiii
-  </div>;
+  return (
+  <div>
+    <img src="https://memegenerator.net/img/instances/73077992/no-weed-for-you.jpg" alt="no_weed"/>
+  </div>);
 }
 class App extends Component {
+
   state = {
-    show: true
+    show: true,
+    showNav: true
   }
+
   showModal = () => {
     this.setState({
-      ... this.state,
+      ...this.state,
       show: !this.state.show
     });
   }
+
   renderNav() {
     // if you don't want nav, ensure this conditional is true
     if ('mycondition' === true) {
       return null;
     }
 
-    // else return Nav
-    return <Nav1 />;
+  handleNav = () => {
+    this.setState({
+      showNav: false
+    });
   }
 
   render() {
@@ -37,18 +45,25 @@ class App extends Component {
   <Router>
     <div>
 
+
       {this.renderNav()}
 
+      {!this.state.showNav ? null : <Nav1/>}
+      
       {/* <body onLoad={this.showModal}> */}
       {/* <input type="button"
       onClick={this.showModal}
       value="Show Modal" />
  */}
+
  <Jumbo />
  <Products />
       <Modal
       onClose={this.showModal}
       show={this.state.show}>
+        hansolo={this.handleNav}
+      >
+
       {/* <ModalContent /> */}
       {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
 
