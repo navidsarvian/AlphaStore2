@@ -2,11 +2,7 @@
   "name": "alphastore",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lilmocc/AlphaStore.git"
@@ -31,6 +27,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "dev": "concurrently \"nodemon server.js\" \"cd ./client && npm start\"",
+    "start": "node server.js"
   }
 }
