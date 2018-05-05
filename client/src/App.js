@@ -47,6 +47,7 @@ class App extends Component {
         <div>
 
 
+
           {this.renderNav()}
 
           {!this.state.showNav ? null : <Nav1/>}
