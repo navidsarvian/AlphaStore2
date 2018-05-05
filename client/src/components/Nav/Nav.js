@@ -1,5 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import {Link} from "react-router-dom";
+
 
 const Nav1 = () =>
 //   <nav className="navbar navbar-inverse navbar-top">
@@ -36,7 +38,11 @@ const Nav1 = () =>
   <Navbar.Collapse>
     <Nav>
       <NavItem eventKey={1} href="#">
+        <li className={window.location.pathname === "/" ? "active" : ""}>
+        <Link to="/">
         Home
+        </Link>
+        </li>
       </NavItem>
 
       {/* <NavItem eventKey={2} href="#">
@@ -54,18 +60,34 @@ const Nav1 = () =>
     <Nav pullCenter>
 
       <NavItem eventKey={1} href="#">
+      <li className={window.location.pathname === "/login" ? "active" : ""}>
+        <Link to="/login">
         Login
+        </Link>
+        </li>
       </NavItem>
       <NavItem eventKey={2} href="#">
+      <li className={window.location.pathname === "/register" ? "active" : ""}>
+        <Link to="/register">
         Register
+        </Link>
+        </li>
       </NavItem>
     </Nav>
     <Nav pullRight>
       <NavItem eventKey={1} href="#">
+      <li className={window.location.pathname === "/cart" ? "active" : ""}>
+        <Link to="/cart">
         Cart
+        </Link>
+        </li>
       </NavItem>
       <NavItem eventKey={2} href="#">
+      <li className={window.location.pathname === "/profile" ? "active" : ""}>
+        <Link to="/profile">
         Your Profile
+        </Link>
+        </li>
       </NavItem>
     </Nav>
   </Navbar.Collapse>

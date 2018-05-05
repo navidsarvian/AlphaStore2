@@ -9,6 +9,9 @@ import Jumbo from "./components/Jumbotron";
 import Products from "./components/ProductCards";
 import axios from "axios";
 import Dashboard from "./components/Dashboard";
+import Home from "./pages/home";
+import Login from "./pages/Login";
+
 
 
 function MyPage(props) {
@@ -92,7 +95,6 @@ handleChange = (e) => {
         <div>
 
 
-
           {this.renderNav()}
 
           {!this.state.showNav ? null : <Nav1/>}
@@ -102,6 +104,7 @@ handleChange = (e) => {
           onClick={this.showModal}
           value="Show Modal" />
     */}
+
 
     <Jumbo />
     <Products />
@@ -118,9 +121,9 @@ handleChange = (e) => {
           </Modal>
           <Switch>
             <Route exact path="/hi" component={MyPage} />
-            {/* <Route exact path="/modal" component={ageModal} /> */}
-            {/* <Route exact path="/books/:id" component={Detail} /> */}
-            {/* <Route component={NoMatch} /> */}
+            <Route exact path="/modal" component={Modal} /> 
+            <Route exact path="/Home" component={Home} />
+            <Route path ="/Login"component={Login} />
           </Switch>
         </div>
       </Router>
