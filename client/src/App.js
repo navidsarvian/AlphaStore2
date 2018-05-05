@@ -6,6 +6,8 @@ import './index.css';
 import Modal, { ModalContent } from './components/Modal';
 import Jumbo from "./components/Jumbotron";
 import Products from "./components/ProductCards";
+import Home from "./pages/home";
+import Login from "./pages/Login";
 
 
 function MyPage(props) {
@@ -28,11 +30,12 @@ class App extends Component {
     });
   }
 
-  renderNav() {
+  renderNav = () => {
     // if you don't want nav, ensure this conditional is true
     if ('mycondition' === true) {
       return null;
     }
+  }
 
   handleNav = () => {
     this.setState({
@@ -42,44 +45,44 @@ class App extends Component {
 
   render() {
     return (
-  <Router>
-    <div>
+      <Router>
+        <div>
 
 
-      {this.renderNav()}
+          {this.renderNav()}
 
-      {!this.state.showNav ? null : <Nav1/>}
-      
-      {/* <body onLoad={this.showModal}> */}
-      {/* <input type="button"
-      onClick={this.showModal}
-      value="Show Modal" />
- */}
-
- <Jumbo />
- <Products />
-      <Modal
-      onClose={this.showModal}
-      show={this.state.show}>
-        hansolo={this.handleNav}
-      >
-
-      {/* <ModalContent /> */}
-      {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
+          {!this.state.showNav ? null : <Nav1/>}
+          
+          {/* <body onLoad={this.showModal}> */}
+          {/* <input type="button"
+          onClick={this.showModal}
+          value="Show Modal" />
+    */}
 
 
-        Please Verify Your Age */}
-      {/* </ModalContent> */}
-      </Modal>
-      <Switch>
-        <Route exact path="/hi" component={MyPage} />
-        {/* <Route exact path="/modal" component={ageModal} /> */}
-        {/* <Route exact path="/books/:id" component={Detail} /> */}
-        {/* <Route component={NoMatch} /> */}
-      </Switch>
-    </div>
-  </Router>
+    <Jumbo />
+    <Products />
+          <Modal
+          onClose={this.showModal}
+          show={this.state.show}>
+            hansolo={this.handleNav}
+          >
+
+          {/* <ModalContent /> */}
+          {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
+            Please Verify Your Age */}
+          {/* </ModalContent> */}
+          </Modal>
+          <Switch>
+            <Route exact path="/hi" component={MyPage} />
+            <Route exact path="/modal" component={Modal} /> 
+            <Route exact path="/Home" component={Home} />
+            <Route path ="/Login"component={Login} />
+          </Switch>
+        </div>
+      </Router>
     );
-  }
+  };
 }
+
 export default App;
