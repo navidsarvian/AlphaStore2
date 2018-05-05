@@ -1,3 +1,4 @@
-#CardDeck{
-  background-color: red;
+div.custom-card {
+  width: 30%;
+  display: inline-block;
 }
