@@ -6,6 +6,9 @@ import './index.css';
 import Modal, { ModalContent } from './components/Modal';
 import Jumbo from "./components/Jumbotron";
 import Products from "./components/ProductCards";
+import Home from "./pages/home";
+import Login from "./pages/Login";
+
 
 function MyPage(props) {
   return (
@@ -56,6 +59,7 @@ class App extends Component {
           value="Show Modal" />
     */}
 
+
     <Jumbo />
     <Products />
           <Modal
@@ -71,9 +75,9 @@ class App extends Component {
           </Modal>
           <Switch>
             <Route exact path="/hi" component={MyPage} />
-            {/* <Route exact path="/modal" component={ageModal} /> */}
-            {/* <Route exact path="/books/:id" component={Detail} /> */}
-            {/* <Route component={NoMatch} /> */}
+            <Route exact path="/modal" component={Modal} /> 
+            <Route exact path="/Home" component={Home} />
+            <Route path ="/Login"component={Login} />
           </Switch>
         </div>
       </Router>
