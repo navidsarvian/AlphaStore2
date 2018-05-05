@@ -6,6 +6,7 @@ import './index.css';
 import Modal, { ModalContent } from './components/Modal';
 import Jumbo from "./components/Jumbotron";
 import Products from "./components/ProductCards";
+
 function MyPage(props) {
   return (
   <div>
@@ -13,32 +14,40 @@ function MyPage(props) {
   </div>);
 }
 class App extends Component {
+
   state = {
     show: true,
     showNav: true
   }
+
   showModal = () => {
     this.setState({
       ...this.state,
       show: !this.state.show
     });
   }
+
   renderNav = () => {
     // if you don't want nav, ensure this conditional is true
     if ('mycondition' === true) {
       return null;
     }
   }
+
   handleNav = () => {
     this.setState({
       showNav: false
     });
   }
+
   render() {
     return (
       <Router>
         <div>
+
+
           {this.renderNav()}
+
           {!this.state.showNav ? null : <Nav1/>}
           
           {/* <body onLoad={this.showModal}> */}
@@ -46,6 +55,7 @@ class App extends Component {
           onClick={this.showModal}
           value="Show Modal" />
     */}
+
     <Jumbo />
     <Products />
           <Modal
@@ -53,6 +63,7 @@ class App extends Component {
           show={this.state.show}>
             hansolo={this.handleNav}
           >
+
           {/* <ModalContent /> */}
           {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
             Please Verify Your Age */}
@@ -69,4 +80,5 @@ class App extends Component {
     );
   };
 }
+
 export default App;
