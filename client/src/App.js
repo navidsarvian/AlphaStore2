@@ -6,6 +6,7 @@ import './index.css';
 import Modal, { ModalContent } from './components/Modal';
 import Jumbo from "./components/Jumbotron";
 import Products from "./components/ProductCards";
+
 import Home from "./pages/home";
 import Login from "./pages/Login";
 
@@ -20,7 +21,6 @@ class App extends Component {
     show: true,
     showNav: true
   }
-
   showModal = () => {
     this.setState({
       ...this.state,
