@@ -33,7 +33,7 @@ class App extends Component {
     if ('mycondition' === true) {
       return null;
     }
-
+}
   handleNav = () => {
     this.setState({
       showNav: false
@@ -49,7 +49,7 @@ class App extends Component {
       {this.renderNav()}
 
       {!this.state.showNav ? null : <Nav1/>}
-      
+
       {/* <body onLoad={this.showModal}> */}
       {/* <input type="button"
       onClick={this.showModal}
@@ -80,6 +80,6 @@ class App extends Component {
     </div>
   </Router>
     );
-  }
+  };
 }
 export default App;
