@@ -40,7 +40,8 @@ class App extends Component {
     this.setState({
       showNav: false
     });
-  }
+  };
+}
 
   render() {
     return (
@@ -55,16 +56,15 @@ class App extends Component {
       {/* <body onLoad={this.showModal}> */}
       {/* <input type="button"
       onClick={this.showModal}
-      value="Show Modal" />
- */}
+      value="Show Modal" />*/}
 
  <Jumbo />
  <Products />
-      <Modal
+      <Modal>
       onClose={this.showModal}
       show={this.state.show}>
         hansolo={this.handleNav}
-      >
+      {/* > */}
 
       {/* <ModalContent /> */}
       {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
@@ -75,9 +75,9 @@ class App extends Component {
       </Modal>
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/home" component = {Home}/>
-       <Route exact path="/modal" component={Modal} />
-        <Route exact path="/login" component={Login} />
+        <Route exact path="/Home" component = {Home}/>
+       <Route exact path="/Modal" component={Modal} />
+        <Route exact path="/Login" component={Login} />
        {/* // <Route exact path="/shop" component={shop} />
         <Route component={NoMatch} /> */}
         <Route exact path="/hi" component={MyPage} />
@@ -87,7 +87,7 @@ class App extends Component {
       </Switch>
     </div>
   </Router>
-    );
-  }
+  );
+}
 }
 export default App;
