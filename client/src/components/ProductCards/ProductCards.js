@@ -2,8 +2,8 @@ import React from 'react';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
  CardSubtitle, CardBody, Col, Row } from 'reactstrap';
 import './ProductCards.css';
-import logo from '../../public/IMG_0912.jpg';
-
+// import logo from '../../public/IMG_0912.jpg';
+const logo = '/IMG_0912.jpg';
 
 const Products = () => {
   return (

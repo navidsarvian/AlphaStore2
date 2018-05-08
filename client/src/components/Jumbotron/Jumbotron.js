@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container } from 'reactstrap';
 import './Jumbotron.css';
-import video from '../../public/674157371.mp4';
+// import video from '../../public/674157371.mp4';
 
 const Jumbo = (props) => {
   return (
@@ -9,7 +9,7 @@ const Jumbo = (props) => {
     <div className="Jumbotron">
       <Jumbotron fluid>
       <video id="video-background" autoPlay="true" loop="loop" preload="metadata" muted="muted">
-          <source src={video} type="video/mp4"/>
+          <source src="/674157371.mp4" type="video/mp4"/>
       </video>
         <Container fluid>
           <img src="https://i.imgur.com/w2EwBqs.png?1" width="180px" height="180px" class="GGLog"/>
