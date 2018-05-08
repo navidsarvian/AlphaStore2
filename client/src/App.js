@@ -30,16 +30,26 @@ class App extends Component {
         password: '',
         is_register: false,
         user: {},
-        logged_in: false
+        logged_in: false,
+        show: true,
+        showNav: true,
+        showProducts: true
       }
     }
 
     componentDidMount = () => {
+
   axios.get('/auth/isauth')
     .then((res) => {
       console.log(res.data);
       this.setState({user: res.data, logged_in: true})
     })
+    console.log('this is state');
+    console.log(this.state);
+}
+
+componentWillReceiveProps(newProps) {
+  console.log('running new props');
 }
 
 handleChange = (e) => {
@@ -63,16 +73,22 @@ handleChange = (e) => {
     });
   }
 
-  state = {
-    show: true,
-    showNav: true
-  }
+  // state = {
+  //   show: true,
+  //   showNav: true
+  // }
 
   showModal = () => {
     this.setState({
       ...this.state,
       show: !this.state.show
     });
+  }
+
+  hideProducts = () => {
+    this.setState({
+      showProducts: false
+    })
   }
 
   renderNav = () => {
@@ -95,7 +111,7 @@ handleChange = (e) => {
         <div>
 
 
-          {this.renderNav()}
+          {/* {this.renderNav()} */}
 
           {!this.state.showNav ? null : <Nav1/>}
 
@@ -106,13 +122,18 @@ handleChange = (e) => {
     */}
 
 
-    <Jumbo />
-    <Products />
+    {this.state.showProducts ?  
+      <div>
+        <Jumbo />
+        <Products /> 
+      </div>
+      : 
+      null }
           <Modal
           onClose={this.showModal}
           show={this.state.show}>
-            hansolo={this.handleNav}
-          >
+            {/* hansolo={this.handleNav} */}
+          {/* > */}
 
           {/* <ModalContent /> */}
           {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
@@ -120,10 +141,13 @@ handleChange = (e) => {
           {/* </ModalContent> */}
           </Modal>
           <Switch>
-            <Route exact path="/hi" component={MyPage} />
+            {/* <Route exact path="/hi" component={MyPage} /> */}
             <Route exact path="/modal" component={Modal} /> 
-            <Route exact path="/Home" component={Home} />
-            <Route path ="/Login"component={Login} />
+            <Route exact path="/" component={Home} />
+            <Route exact path ="/login" render={(props) => (
+               <Login {...props} hideProducts={this.hideProducts} />
+            )} 
+           />
           </Switch>
         </div>
       </Router>
