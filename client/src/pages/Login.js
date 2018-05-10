@@ -4,11 +4,11 @@ import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap
 import './Login.css';
 
 export default class Login extends Component {
-  constructor(props) {
-    super(props);
-
-    this.props.hideProducts();
-  }
+  // constructor(props) {
+  //   super(props);
+  //
+  //   this.props.hideProducts();
+  // }
 
   componentDidMount() {
     console.log('this is props inside products');
