@@ -49,8 +49,12 @@ class App extends Component {
     console.log(this.state);
 }
 
-componentWillReceiveProps(newProps) {
-  console.log('running new props');
+componentWillReceiveProps(){
+  console.log('receiving props in app');
+}
+
+componentWillUpdate(){
+  console.log('updating props in app');
 }
 
 handleChange = (e) => {
@@ -86,9 +90,9 @@ handleChange = (e) => {
     });
   }
 
-  hideProducts = () => {
+  toggleProducts = (bool) => {
     this.setState({
-      showProducts: false
+      showProducts: bool
     })
   }
 
@@ -122,17 +126,6 @@ handleChange = (e) => {
           value="Show Modal" />
     */}
 
-
-
-    {this.state.showProducts ?  
-      <div>
-        <Jumbo />
-        <Products /> 
-        <Footer1 />
-      </div>
-      : 
-      null }
-
           <Modal
           onClose={this.showModal}
           show={this.state.show}>
@@ -149,11 +142,7 @@ handleChange = (e) => {
             {/* <Route exact path="/hi" component={MyPage} /> */}
             <Route exact path="/modal" component={Modal} /> 
             <Route exact path="/" component={Home} />
-            <Route exact path ="/login" render={(props) => (
-               <Login {...props} hideProducts={this.hideProducts} />
-            )} 
-           />
-
+            <Route exact path ="/login" component={Login} />
           </Switch>
         </div>
       </Router>

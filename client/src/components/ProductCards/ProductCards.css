@@ -5,18 +5,34 @@ div .custom-card {
   padding-top: 5%;
 }
 
-.container {
-  padding-top: 10%;
-  vertical-align: top;
+div.navbar-collapse.collapse {
+  padding: 2em 2em 0;
+  transform: translateY(5%);
 }
 
+li[role="presentation"] a[role="button"] {
+  padding-bottom: 0;
+}
+
+.GGLogo.header {
+  transform: translateY(-34%);
+}
+
+.container {
+  /* padding-top: 10%; */
+  vertical-align: top;
+}
+.container1{
+  padding-top: 25%;
+}
 .card-deck {
   align: top;
   padding-bottom: 20px;
 }
 
 .page-header{
-  background-color: green;
+  padding-bottom: 5%;
+  background-color: #42914d;
 }
 
 .col-md-4{
