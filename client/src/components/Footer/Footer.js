@@ -6,18 +6,18 @@ import './Footer.css';
 const Footer1 = () => {
   return (
 
-<div class="footer" id="footer">
-<footer class="page-footer font-small blue pt-4 mt-4">
-    <div class="container-fluid text-center text-md-left">
-        <div class="row">
-            <div class="col-md-6">
-                <h5 class="text-uppercase">Footer Content</h5>
+<div className="footer" id="footer">
+<footer className="page-footer font-small blue pt-4 mt-4">
+    <div className="container-fluid text-center text-md-left">
+        <div className="row">
+            <div className="col-md-6">
+                <h5 className="text-uppercase">Footer Content</h5>
                 <p>Here you can use rows and columns here to organize your footer content.</p>
             </div>
 
-            <div class="col-md-6">
-                <h5 class="text-uppercase">Links</h5>
-                <ul class="list-unstyled">
+            <div className="col-md-6">
+                <h5 className="text-uppercase">Links</h5>
+                <ul className="list-unstyled">
                     <li>
                         <a href="#!">Link 1</a>
                     </li>
