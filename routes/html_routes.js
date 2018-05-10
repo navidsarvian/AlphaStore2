@@ -6,6 +6,10 @@ module.exports = function(app) {
     res.sendFile( path.join(__dirname, "./../public/index.html"));
   });
 
+  // app.get("/hi", function(req, res) {
+  //   res.sendFile( path.join(__dirname, "./../public/index.html"));
+  // });
+
   app.post('/login',
   passport.authenticate('local', { successRedirect: '/',
                                    failureRedirect: '/login' }));

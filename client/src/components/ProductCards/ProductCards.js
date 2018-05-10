@@ -10,7 +10,7 @@ const logo = '/IMG_0912.jpg';
 const Products = ({showProducts}) => {
   return (
     <Container style={{ marginTop: "35px" }}>
-    <div class="page-header">
+    <div className="page-header">
       <h1>Gone Green Goodies <small>Check out our full line of products</small></h1>
     </div>
       <Row>
