@@ -7,17 +7,17 @@ const Jumbo = (props) => {
   return (
   <div className="container" width="100%" height="30%">
     <div className="Jumbotron">
-      <Jumbotron fluid>
+      {/* <Jumbotron fluid> */}
       <video id="video-background" autoPlay="true" loop="loop" preload="metadata" muted="muted">
           <source src="/674157371.mp4" type="video/mp4"/>
       </video>
-        <Container fluid>
+        {/* <Container fluid>
           <img src="https://i.imgur.com/w2EwBqs.png?1" width="180px" height="180px" className="GGLog"/>
           <p className="lead">This is a modified jumbotron</p>
           <a id="button" className="btn btn-outline-success" data-toggle="modal" data-target="#ageModal" role="button">Login</a>
           <button type="button" className="btn btn-outline-success">Register</button>
-        </Container>
-      </Jumbotron>
+        </Container> */}
+      {/* </Jumbotron> */}
     </div>
   </div>
   );
