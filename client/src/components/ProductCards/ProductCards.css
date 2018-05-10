@@ -22,14 +22,17 @@ li[role="presentation"] a[role="button"] {
   /* padding-top: 10%; */
   vertical-align: top;
 }
-
+.container1{
+  padding-top: 25%;
+}
 .card-deck {
   align: top;
   padding-bottom: 20px;
 }
 
 .page-header{
-  background-color: green;
+  padding-bottom: 5%;
+  background-color: #42914d;
 }
 
 .col-md-4{

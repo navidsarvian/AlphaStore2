@@ -5,8 +5,6 @@ import Footer1 from "../components/Footer";
 
 const Home = () =>
 <div>
-    <h1> home page</h1>
-
 </div>;
 
 export default Home;
