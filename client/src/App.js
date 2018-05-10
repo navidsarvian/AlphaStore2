@@ -11,6 +11,7 @@ import axios from "axios";
 import Dashboard from "./components/Dashboard";
 import Home from "./pages/home";
 import Login from "./pages/Login";
+import Footer1 from "./components/Footer";
 
 
 
@@ -108,6 +109,7 @@ handleChange = (e) => {
 
     <Jumbo />
     <Products />
+    <Footer1 />
           <Modal
           onClose={this.showModal}
           show={this.state.show}>
@@ -121,7 +123,7 @@ handleChange = (e) => {
           </Modal>
           <Switch>
             <Route exact path="/hi" component={MyPage} />
-            <Route exact path="/modal" component={Modal} /> 
+            <Route exact path="/modal" component={Modal} />
             <Route exact path="/Home" component={Home} />
             <Route path ="/Login"component={Login} />
           </Switch>
