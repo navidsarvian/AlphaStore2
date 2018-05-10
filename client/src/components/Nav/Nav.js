@@ -28,12 +28,6 @@ const Nav1 = () => {
           </LinkContainer>
 
 
-        <NavDropdown eventKey={3} title="Shop" id="basic-nav-dropdown">
-          <MenuItem eventKey={3.1}>Sale Items</MenuItem>
-          <MenuItem eventKey={3.2}>Flowers</MenuItem>
-          <MenuItem eventKey={3.3}>Concentrates</MenuItem>
-          <MenuItem eventKey={3.4}>Edibles</MenuItem>
-        </NavDropdown>
       </Nav>
       <Nav>
       
