@@ -5,8 +5,21 @@ div .custom-card {
   padding-top: 5%;
 }
 
+div.navbar-collapse.collapse {
+  padding: 2em 2em 0;
+  transform: translateY(5%);
+}
+
+li[role="presentation"] a[role="button"] {
+  padding-bottom: 0;
+}
+
+.GGLogo.header {
+  transform: translateY(-34%);
+}
+
 .container {
-  padding-top: 10%;
+  /* padding-top: 10%; */
   vertical-align: top;
 }
 
