@@ -1,4 +1,24 @@
-div.custom-card {
+div .custom-card {
   width: 30%;
   display: inline-block;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.container {
+  padding-top: 10%;
+  vertical-align: top;
+}
+
+.card-deck {
+  align: top;
+  padding-bottom: 20px;
+}
+
+.page-header{
+  background-color: green;
+}
+
+.col-md-4{
+  padding-bottom: 10%;
 }
