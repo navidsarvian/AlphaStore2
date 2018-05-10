@@ -6,11 +6,14 @@ import {
 import './ProductCards.css';
 // import logo from '../../public/IMG_0912.jpg';
 const logo = '/IMG_0912.jpg';
+const logo2 = '/IMG_0918.jpg';
 
 const Products = ({showProducts}) => {
   return (
-    <Container style={{ marginTop: "35px" }}>
-    <div className="page-header">
+
+    <Container style={{ marginTop: "7%" }}>
+    <div class="page-header">
+
       <h1>Gone Green Goodies <small>Check out our full line of products</small></h1>
     </div>
       <Row>
@@ -22,7 +25,7 @@ const Products = ({showProducts}) => {
                 <CardTitle>Card title</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
                 <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                <Button>Button</Button>
+                <Button>Add To Cart</Button>
               </CardBody>
             </Card>
           </div>
@@ -84,7 +87,7 @@ const Products = ({showProducts}) => {
         </CardDeck>
       </Row>
     </Container>
- 
+
 
   );
 };

@@ -3,12 +3,12 @@
   color: rgba(0,0,0,0.5);
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 20px;
-  margin-top: 20%;
+  /* padding: 20px; */
+  margin-top: 10%;
   max-width: 100%;
   margin-left: 20%;
   margin-right: 20%;
-  max-height: 50%;
+  /* max-height: 50%; */
   /* background-image: url("../../assets/blur-cannabis-close-up-606506.jpg"); */
 }
 
