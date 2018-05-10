@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './Login.css';
 
-export default class Login extends Component {
+export default class Regiter extends Component {
   // constructor(props) {
   //   super(props);
   //
@@ -20,6 +20,12 @@ export default class Login extends Component {
     return (
       <div className="logincontainer">
         <Form>
+        <FormGroup row>
+         <Label for="exampleUsername" sm={3}>Username</Label>
+         <Col sm={8}>
+           <Input type="username" name="username" id="exampleUsername" placeholder="maryjane" />
+         </Col>
+       </FormGroup>
        <FormGroup row>
          <Label for="exampleEmail" sm={3}>Email</Label>
          <Col sm={8}>

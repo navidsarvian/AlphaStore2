@@ -7,6 +7,11 @@ import './ProductCards.css';
 // import logo from '../../public/IMG_0912.jpg';
 const logo = '/IMG_0912.jpg';
 const logo2 = '/IMG_0918.jpg';
+const mediblocks = '/mediblocks.png'
+const medisyrup = '/gonegreen1.jpg'
+const medipop = '/gonegreen4.jpg'
+const sativa = '/Sativa.png'
+const indica = '/Indica.png'
 
 const Products = ({showProducts}) => {
   return (
@@ -20,7 +25,7 @@ const Products = ({showProducts}) => {
         <CardDeck>
           <div className="col-md-4">
             <Card>
-              <CardImg top width="100%" src={logo} alt="Card image cap" />
+              <CardImg  top width="70%" src={mediblocks} alt="Card image cap" />
               <CardBody>
 
                 <CardTitle>Medi Blocks</CardTitle>
@@ -31,17 +36,13 @@ const Products = ({showProducts}) => {
                 anxiety, appetite, nausea, pain, and sleep.
                 </CardText>
                 <Button>Add to Cart</Button>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                <Button>Add To Cart</Button>
 
               </CardBody>
             </Card>
           </div>
           <div className="col-md-4">
           <Card>
-            <CardImg top width="100%" src={logo} alt="Card image cap" />
+            <CardImg top width="50%" src={medisyrup} alt="Card image cap" />
             <CardBody>
               <CardTitle>Medi Syrup</CardTitle>
               <CardSubtitle>Medicinal Benefits</CardSubtitle>
@@ -54,7 +55,7 @@ const Products = ({showProducts}) => {
         </div>
         <div className="col-md-4">
           <Card>
-            <CardImg top width="100%" src={logo} alt="Card image cap" />
+            <CardImg top width="100%" src={medipop} alt="Card image cap" />
             <CardBody>
               <CardTitle>Medi POP</CardTitle>
               <CardSubtitle>Medicinal Benefits</CardSubtitle>
@@ -72,32 +73,32 @@ appetite, nausea, pain, and sleep.175mg THC $10.00 or 300mg $20.00.
           <Card>
             <CardImg top width="100%" src={logo} alt="Card image cap" />
             <CardBody>
-              <CardTitle>Card title</CardTitle>
-              <CardSubtitle>Card subtitle</CardSubtitle>
-              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-              <Button>Button</Button>
+              <CardTitle>420 Bars</CardTitle>
+              <CardSubtitle>Medicinal Benefits</CardSubtitle>
+              <CardText>Our in house made concentrates are full spectrum and high in terpens. Death Bubba is known to help with a variety of symptoms including depression, anxiety, appetite, nausea, pain, and sleep. Available Flavours are: Milk Chocolate, Mint Chocolate, Dark Chocolate Raspberry.</CardText>
+              <Button>Add to Cart</Button>
             </CardBody>
           </Card>
         </div>
         <div className="col-md-4">
         <Card>
-          <CardImg top width="100%" src={logo} alt="Card image cap" />
+          <CardImg top width="70%" src={sativa} alt="Card image cap" />
           <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-            <Button>Button</Button>
+            <CardTitle>Sativa Kush</CardTitle>
+            <CardSubtitle>Dank</CardSubtitle>
+            <CardText>This will have you trippin out, re-thinking life, and realizing you can do better. Smoke this shit and you'll be philosophical as shit.</CardText>
+            <Button>Add to cart</Button>
           </CardBody>
         </Card>
       </div>
       <div className="col-md-4">
         <Card>
-          <CardImg top width="100%" src={logo} alt="Card image cap" />
+          <CardImg top width="70%" src={indica} alt="Card image cap" />
           <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-            <Button>Button</Button>
+            <CardTitle>Darth Vader OG</CardTitle>
+            <CardSubtitle>Indica</CardSubtitle>
+            <CardText>You might fuck around and become someones father after smoking this purple beauty.</CardText>
+            <Button>Add to Cart</Button>
           </CardBody>
         </Card>
       </div>
