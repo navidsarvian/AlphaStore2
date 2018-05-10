@@ -64,11 +64,14 @@ export default class App extends React.Component {
           <h2 ref={subtitle => this.subtitle = subtitle}>Please Verify Your Age</h2>
           <div className="center">
           <button onClick={this.closeModal} className="ModalButtons">I am 19+</button>
-          <Link to="/hi"><button 
+          {/* <Link to="/hi">
+          </Link> */}
+
+          <button 
             onClick={() => { 
-              this.closeModal(); this.props.hansolo()
-              }} 
-            className="ModalButtons">I am not 19</button></Link>
+              window.location.href = 'https://memegenerator.net/img/instances/73077992/no-weed-for-you.jpg';
+            }} 
+            className="ModalButtons">I am not 19</button>
             </div>
         </Modal>
       </div>
