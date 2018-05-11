@@ -53,3 +53,7 @@ CardTitle, CardSubtitle, CardText, Button{
 .col-md-4{
   padding-bottom: 10%;
 }
+
+img .card-img-top {
+transform: rotate(50deg);
+}

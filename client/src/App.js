@@ -12,6 +12,7 @@ import Dashboard from "./components/Dashboard";
 import Home from "./pages/home";
 import Login from "./pages/Login";
 import Footer1 from "./components/Footer";
+import Register from "./pages/Register";
 
 
 
@@ -143,6 +144,8 @@ handleChange = (e) => {
             <Route exact path="/modal" component={Modal} /> 
             <Route exact path="/" component={Home} />
             <Route exact path ="/login" component={Login} />
+            <Route exact path ="/register" component={Register} />
+
           </Switch>
         </div>
       </Router>

@@ -8,6 +8,7 @@ const Jumbo = (props) => {
   <div className="container" width="100%" height="30%">
     <div className="Jumbotron">
 
+
       <video id="video-background" autoPlay="true" loop="loop" preload="metadata" muted="muted">
           <source src="/674157371.mp4" type="video/mp4"/>
       </video>
@@ -23,6 +24,7 @@ const Jumbo = (props) => {
         <br></br>
       </ButtonGroup>
       </div>
+
     </div>
   </div>
   );
