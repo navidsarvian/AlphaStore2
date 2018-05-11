@@ -11,14 +11,13 @@ export default class Home extends Component {
     render(){
         return(
             <div>
-                <h1> home page</h1>
+
                     <div>
                         <Jumbo />
-                        <Products /> 
+                        <Products />
                         <Footer1 />
                     </div>
             </div>
         )
     }
 }
-

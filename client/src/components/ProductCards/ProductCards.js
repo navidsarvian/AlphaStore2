@@ -11,9 +11,8 @@ const logo2 = '/IMG_0918.jpg';
 const Products = ({showProducts}) => {
   return (
 
-    <Container style={{ marginTop: "7%" }}>
+    <Container-fluid style={{ marginTop: "45px" }}>
     <div class="page-header">
-
       <h1>Gone Green Goodies <small>Check out our full line of products</small></h1>
     </div>
       <Row>
@@ -22,7 +21,6 @@ const Products = ({showProducts}) => {
             <Card>
               <CardImg top width="100%" src={logo} alt="Card image cap" />
               <CardBody>
-
                 <CardTitle>Medi Blocks</CardTitle>
                 <CardSubtitle>Medicinal Benefits</CardSubtitle>
                 <CardText>
@@ -31,11 +29,6 @@ const Products = ({showProducts}) => {
                 anxiety, appetite, nausea, pain, and sleep.
                 </CardText>
                 <Button>Add to Cart</Button>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                <Button>Add To Cart</Button>
-
               </CardBody>
             </Card>
           </div>
@@ -60,10 +53,10 @@ const Products = ({showProducts}) => {
               <CardSubtitle>Medicinal Benefits</CardSubtitle>
               <CardText>
               Our in house made concentrates are full spectrum and high in terpens
-Death Bubba is known to help with a variety of symptoms including depression, anxiety,
-appetite, nausea, pain, and sleep.175mg THC $10.00 or 300mg $20.00.
+              Death Bubba is known to help with a variety of symptoms including depression, anxiety,
+              appetite, nausea, pain, and sleep.175mg THC $10.00 or 300mg $20.00.
               </CardText>
-              
+
               <Button>Add to Cart</Button>
             </CardBody>
           </Card>
@@ -103,7 +96,7 @@ appetite, nausea, pain, and sleep.175mg THC $10.00 or 300mg $20.00.
       </div>
         </CardDeck>
       </Row>
-    </Container>
+    </Container-fluid>
 
 
   );

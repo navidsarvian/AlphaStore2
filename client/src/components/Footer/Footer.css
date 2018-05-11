@@ -1,3 +1,25 @@
 .footer{
   background-color: #42914d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.team {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  list-style-type: none;
+  text-align:center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+}
+
+.alpha{
+  font-style: bold;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
 }
