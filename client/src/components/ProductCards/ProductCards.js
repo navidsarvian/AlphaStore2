@@ -12,7 +12,7 @@ const Products = ({showProducts}) => {
   return (
 
     <Container-fluid style={{ marginTop: "45px" }}>
-    <div class="page-header">
+    <div className="page-header">
       <h1>Gone Green Goodies <small>Check out our full line of products</small></h1>
     </div>
       <Row>
