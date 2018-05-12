@@ -1,12 +1,7 @@
 import React from 'react';
-import {
-  Card, Button, CardImg, CardTitle, CardText, CardDeck,
-  CardSubtitle, CardBody, Col, Row, Container
-} from 'reactstrap';
+import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody, Row } from 'reactstrap';
 import './ProductCards.css';
-// import logo from '../../public/IMG_0912.jpg';
 const logo = '/IMG_0912.jpg';
-const logo2 = '/IMG_0918.jpg';
 const mediblocks = '/mediblocks.png'
 const medisyrup = '/gonegreen1.jpg'
 const medipop = '/gonegreen4.jpg'

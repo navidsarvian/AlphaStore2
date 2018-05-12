@@ -1,6 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import {Link} from "react-router-dom";
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const Nav1 = () => {
@@ -12,9 +11,6 @@ const Nav1 = () => {
 
     <Navbar.Collapse>
       <Nav>
-          {/* <li className={window.location.pathname === "/" ? "active" : ""}> */}
-          {/* </li> */}
-
             <NavItem>
               <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="120px" height="120px" className="GGLogo header" alt="company logo"/>
             </NavItem>
@@ -31,16 +27,12 @@ const Nav1 = () => {
 
       <LinkContainer to="/login">
         <NavItem eventKey={4} href="#">
-        {/* <li className={window.location.pathname === "/login" ? "active" : ""}> */}
           Login
-          {/* </li> */}
         </NavItem>
         </LinkContainer>
         <LinkContainer to="/register">
         <NavItem eventKey={5} href="#">
-        {/* <li className={window.location.pathname === "/register" ? "active" : ""}> */}
           Register
-          {/* </li> */}
           </NavItem>
           </LinkContainer>
 
@@ -49,16 +41,12 @@ const Nav1 = () => {
       <Nav pullRight>
       <LinkContainer to="/cart">
         <NavItem eventKey={6} href="#">
-        {/* <li className={window.location.pathname === "/cart" ? "active" : ""}> */}
           Cart
-          {/* </li> */}
         </NavItem>
         </LinkContainer>
         <LinkContainer to="/profile">
         <NavItem eventKey={7} href="#">
-        {/* <li className={window.location.pathname === "/profile" ? "active" : ""}> */}
           Your Profile
-          {/* </li> */}
         </NavItem>
         </LinkContainer>
       </Nav>

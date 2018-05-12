@@ -1,27 +1,14 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Redirect } from 'react-router-dom';
 import Nav1 from "./components/Nav";
 import './App.css';
 import './index.css';
-import Modal, { ModalContent } from './components/Modal';
-import Jumbo from "./components/Jumbotron";
-import Products from "./components/ProductCards";
+import Modal from './components/Modal';
 import axios from "axios";
-import Dashboard from "./components/Dashboard";
 import Home from "./pages/home";
 import Login from "./pages/Login";
-import Footer1 from "./components/Footer";
 import Register from "./pages/Register";
 
-
-
-function MyPage(props) {
-  return (
-  <div>
-    <img src="https://memegenerator.net/img/instances/73077992/no-weed-for-you.jpg" alt="no_weed"/>
-  </div>);
-}
 class App extends Component {
 
   constructor() {
@@ -79,10 +66,6 @@ handleChange = (e) => {
     });
   }
 
-  // state = {
-  //   show: true,
-  //   showNav: true
-  // }
 
   showModal = () => {
     this.setState({
@@ -117,30 +100,17 @@ handleChange = (e) => {
         <div>
 
 
-          {/* {this.renderNav()} */}
 
           {!this.state.showNav ? null : <Nav1/>}
 
-          {/* <body onLoad={this.showModal}> */}
-          {/* <input type="button"
-          onClick={this.showModal}
-          value="Show Modal" />
-    */}
 
           <Modal
           onClose={this.showModal}
           show={this.state.show}>
-            {/* hansolo={this.handleNav} */}
-          {/* > */}
 
-          {/* <ModalContent /> */}
-          {/* <img src="https://i.imgur.com/w2EwBqs.png?1" title="Gone Green Logo" width="95px" height="95px" class="GGLogo"/>
-            Please Verify Your Age */}
-          {/* </ModalContent> */}
           </Modal>
           <Switch>
 
-            {/* <Route exact path="/hi" component={MyPage} /> */}
             <Route exact path="/modal" component={Modal} /> 
             <Route exact path="/" component={Home} />
             <Route exact path ="/login" component={Login} />
@@ -151,38 +121,6 @@ handleChange = (e) => {
       </Router>
 
 
-              {/* <Route path="/login" exact render={props => (
-                this.state.logged_in ? <Redirect to="/dashboard" /> :
-                  <form>
-                    <h2>{this.state.is_register ? 'Register' : 'Sign In'}</h2>
-                    <input type="text"
-                      name="email"
-                      value={this.state.email}
-                      placeholder="Email"
-                      onChange={this.handleChange} />
-                    <input type="password"
-                      name="password"
-                      value={this.state.password}
-                      placeholder="Password"
-                      onChange={this.handleChange} />
-                    <button onClick={(e) => {
-                      e.preventDefault();
-                      this.loginOrRegister(this.state.is_register);
-                    }}>Submit</button>
-
-                    <div className="auth-toggle">
-                      <span>Login</span>
-                      <div className="toggle-bar" onClick={this.toggleAuth}>
-                        <span className={`toggle-switch ${this.state.is_register ? 'toggle' : ''}`}></span>
-                      </div>
-                      <span>Register</span>
-                    </div>
-                  </form>
-              )} />
-
-              <Route path="/dashboard" render={props => (
-                !this.state.logged_in ? <Redirect to="/" /> : <Dashboard user={this.state.user} />
-              )} /> */}
 
               </div>
 

@@ -4,9 +4,9 @@ import Products from "../components/ProductCards";
 import Footer1 from "../components/Footer";
 
 export default class Home extends Component {
-    constructor(props) {
-      super(props);
-    }
+    // constructor(props) {
+    //   super(props);
+    // }
 
     render(){
         return(

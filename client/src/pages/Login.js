@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-// import { Form, FormGroup, Col } from 'reactstrap';
-import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './Login.css';
 
 export default class Login extends Component {

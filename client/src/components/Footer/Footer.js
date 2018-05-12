@@ -1,5 +1,4 @@
 import React from 'react';
-import { Footer, Container, hr, h6, Column, Row } from 'reactstrap';
 import './Footer.css';
 const map = '/campus map.png';
 
@@ -21,10 +20,10 @@ const Footer1 = () => {
                 <div>
                   <ul className="list-unstyled">
                       <li>
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="" class="fa fa-facebook"> </a>
+                        <a href="" class="fa fa-twitter"> </a>
+                        <a href="" class="fa fa-instagram"> </a>
+                        <a href="" class="fa fa-youtube"> </a>
                       </li>
                   </ul>
                 </div>
