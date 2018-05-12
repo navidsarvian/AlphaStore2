@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 export default class Regiter extends Component {
   // constructor(props) {
@@ -40,7 +41,9 @@ export default class Regiter extends Component {
 
        <FormGroup check row>
          <Col sm={{ size: 10 }}>
+         <Link to="/login">
            <Button color="success">Submit</Button>
+           </Link>
          </Col>
        </FormGroup>
      </Form>

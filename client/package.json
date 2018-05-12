@@ -1,32 +1,33 @@
-  {
-    "name": "client",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-      "classnames": "^2.2.5",
-      "mobx": "^4.2.0",
-      "mobx-react": "^5.0.0",
-      "react": "^16.3.2",
-      "react-bootstrap": "^0.32.1",
-      "react-custom-scrollbars": "^4.2.1",
-      "react-dom": "^16.3.2",
-      "react-event-observer": "^0.5.11",
-      "react-modal": "^3.4.4",
-      "react-router-dom": "^4.2.2",
-      "react-scripts": "1.1.4",
-      "react-shopping-cart": "^1.8.1",
-      "react-transition-group": "^2.3.1",
-      "reactstrap": "^6.0.1"
-    },
-    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject"
-    },
-    "devDependencies": {
-      "babel-cli": "^6.26.0",
-      "babel-preset-react": "^6.24.1",
-      "css-loader": "^0.28.11"
-    }
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "mobx": "^4.2.0",
+    "mobx-react": "^5.0.0",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.3.2",
+    "react-event-observer": "^0.5.11",
+    "react-modal": "^3.4.4",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-shopping-cart": "^1.8.1",
+    "react-transition-group": "^2.3.1",
+    "reactstrap": "^6.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11"
   }
+}
