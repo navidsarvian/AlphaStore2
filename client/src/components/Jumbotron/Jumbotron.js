@@ -1,7 +1,6 @@
 import React from 'react';
-import { Jumbotron, Container, Button, ButtonGroup } from 'reactstrap';
+import { ButtonGroup } from 'reactstrap';
 import './Jumbotron.css';
-// import video from '../../public/674157371.mp4';
 
 const Jumbo = (props) => {
   return (
@@ -14,10 +13,10 @@ const Jumbo = (props) => {
       </video>
 
       <div className="logo">
-        <img src="https://i.imgur.com/w2EwBqs.png?1" width="250px" height="250px" className="GGLog"/>
+        <img src="https://i.imgur.com/w2EwBqs.png?1" width="250px" height="250px" className="GGLog" alt="Logo"/>
         <p className="lead">Medicinal Marijuana Delivery</p>
         <ButtonGroup>
-        <button type="button" className="button" role="button">Login</button>
+        <button type="button" className="button">Login</button>
         <button type="button" className="button">Register</button>
         <br></br>
         <br></br>
