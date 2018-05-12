@@ -1,6 +1,7 @@
 import React from 'react';
 import { ButtonGroup } from 'reactstrap';
 import './Jumbotron.css';
+import { Link } from 'react-router-dom';
 
 const Jumbo = (props) => {
   return (
@@ -16,8 +17,12 @@ const Jumbo = (props) => {
         <img src="https://i.imgur.com/w2EwBqs.png?1" width="250px" height="250px" className="GGLog" alt="Logo"/>
         <p className="lead">Medicinal Marijuana Delivery</p>
         <ButtonGroup>
-        <button type="button" className="button">Login</button>
+          <Link to="/login">
+        <button type="button" className="button" href="/login">Login</button>
+        </Link>
+        <Link to="/register">
         <button type="button" className="button">Register</button>
+        </Link>
         <br></br>
         <br></br>
         <br></br>
